@@ -181,7 +181,7 @@ export default function LayoutWrapper({
       </div>
 
       {/* Main Navbar Header */}
-      <header className="sticky top-0 z-40 backdrop-blur-md bg-[#FDFBF7]/90 border-b border-amber-500/20 transition-all duration-300 shadow-3xs">
+      <header className="sticky top-0 z-40 backdrop-blur-md bg-gray-300/60 border-b border-amber-500/20 transition-all duration-300 shadow-3xs">
         <div className=" mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-22">
             {/* Logo area */}
@@ -191,49 +191,20 @@ export default function LayoutWrapper({
               id="logo-link"
             >
               {/* Vetted Tech Bee Nepal Corporate Swirl SVG Emblem */}
-              <div className="w-13 h-13 rounded-2xl bg-gradient-to-br from-amber-50 to-amber-100/30 border border-amber-200 flex items-center justify-center transform group-hover:scale-105 transition-all duration-300 relative">
-                <svg
-                  viewBox="0 0 100 100"
-                  className="w-full h-full p-1.5"
-                  fill="none"
-                >
-                  {/* Outer circle layout */}
-                  <circle
-                    cx="50"
-                    cy="50"
-                    r="45"
-                    stroke="#181613"
-                    strokeWidth="4"
-                    strokeDasharray="141 141"
-                    strokeLinecap="round"
-                  />
-
-                  {/* Swirl arc */}
-                  <path
-                    d="M22,35 C35,20, 70,25 78,45 C86,65, 55,85 30,78 C15,70, 20,40 50,50"
-                    stroke="#181613"
-                    strokeWidth="7"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-
-                  {/* Honey gold tick */}
-                  <path
-                    d="M 45 42 L 55 52 L 80 25"
-                    stroke="#f0c702"
-                    strokeWidth="8"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-
-                  {/* Decorative core hub */}
-                  <circle cx="50" cy="50" r="4" fill="#181613" />
-                </svg>
+              <div className="w-23 h-18 rounded-2xl bg-transparent flex items-center justify-center transform group-hover:scale-105 transition-all duration-300 relative">
+                <img
+                  src="/assets/images/logo.png"
+                  alt="Tech Bee Nepal"
+                  className="w-full h-full object-contain mb-4"
+                />
               </div>
               <div className="flex flex-col">
-                <span className="font-sans text-2xl font-black tracking-tight text-slate-900 group-hover:text-amber-600 transition-colors leading-none flex items-center gap-1">
-                  Tech Bee{" "}
-                  <span className="text-amber-500 font-extrabold text-sm relative top-0.5 font-mono">
+                <span className="font-sans text-2xl font-black tracking-tight text-slate-900 group-hover:text-[#f0c702] transition-colors leading-none flex items-center gap-1">
+                  Tech{" "}
+                  <span className="text-[#f0c702] font-extrabold text-2xl relative top-0.5 font-mono">
+                    Bee
+                  </span>
+                  <span className="text-[#f0c702] font-extrabold text-sm relative top-0.5 font-mono">
                     NEPAL
                   </span>
                 </span>
